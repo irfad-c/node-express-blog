@@ -1,0 +1,42 @@
+<!--Author section-->
+<div class="author">
+  <header class="author__heading">Hi Iam Irfad C</header>
+  <p class="author__body">Web developer and content creator</p>
+</div>
+
+<!--Image section-->
+<img
+  src="/img/blogImage.jpg"
+  alt="blog image"
+  class="hero-image"
+  width="981"
+  height="528"
+/>
+
+<!--Article section-->
+<section class="articles">
+  <h2 class="article__heading">Latest posts</h2>
+
+  <!--Loop through posts(EJS code)-->
+  <ul class="article-ul">
+    <% data.forEach(post => { %>
+    <li>
+      <a href="/post/<%= post._id %>">
+        <span><%= post.title %></span>
+        <span class="article-list__date"
+          ><%= post.createdAt.toDateString() %></span
+        >
+      </a>
+    </li>
+    <% }) %>
+  </ul>
+
+  <!--Pagination (EJS Condition)-->
+
+  <% if (nextPage!==null) { %>
+  <!--&lt; is an HTML entity.It stands for less than-->
+  <!--nextPage value will be imported here-->
+  <!--? starts the query string-->
+  <a href="/?page=<%= nextPage %>" class="pagination">&lt;view older posts</a>
+  <% } %>
+</section>
