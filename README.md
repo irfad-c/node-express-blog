@@ -1,70 +1,61 @@
-**Blog Project**
 
-A simple blog application built with Node.js, Express, MongoDB, and EJS.
-This project allows users to create, read, update, and delete blog posts.
+# 🚀 Blog Project  
 
-**Features**
+A simple blog application built with **Node.js, Express, MongoDB, and EJS**.  
+This project allows users to **create, read, update, and delete** blog posts with an **admin dashboard** and **user authentication**.  
 
-Create new blog posts
+## ✨ Features  
+- 📝 Create new blog posts  
+- ✏️ Edit and delete existing posts  
+- 🏠 View all posts on the home page  
+- 🔍 Search functionality  
+- 🎨 Responsive UI with EJS templates  
+- 🗄️ MongoDB database integration  
+- 👥 Separate pages for **Admin** and **User**  
+- 📊 Admin dashboard  
+- 🔑 User authentication with **JWT** & Auth Middleware  
+- 🍪 Cookies & session handling  
+- 🔒 Password hashing for security  
 
-Edit and delete existing posts
+## 🛠️ Tech Stack  
+- **Backend:** Node.js, Express.js  
+- **Frontend:** EJS, CSS  
+- **Database:** MongoDB (Atlas)  
+- **Other Tools:** dotenv, nodemon  
 
-View all posts on the home page
+## ⚙️ Installation & Setup  
 
-Search functionality
-
-Responsive EJS templates for UI
-
-MongoDB database integration
-
-Separate page for both admin and user
-
-Admin dashboard
-
-User authentication using JWT and Auth Middleware
-
-Cookies and session handling
-
-Password hashing
-
-**Tech Stack**
-
-Backend: Node.js, Express.js
-
-Frontend: EJS template engine, CSS
-
-Database: MongoDB (MongoDB Atlas)
-
-Other: dotenv for environment variables, nodemon for development
-
-
-**Installation & Setup**
-
-**Clone the repository**
-
+### 1️⃣ Clone the repository  
 git clone https://github.com/your-username/node-express-blog.git
 cd node-express-blog
 
-
-**Install dependencies**
+### 2️⃣ Install dependencies
 
 npm install
 
+### 3️⃣ Environment variables
 
-**Create a .env file in the root folder and add your MongoDB connection string:**
+Create a .env file in the root folder and add:
 
 MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
 PORT=5000
 
-
-**Run the app in development mode**
+### 4️⃣ Run the app (development mode)
 
 npm run dev
 
+### 5️⃣ Open in browser
 
-**Open in browser**
-
-http://localhost:5000
+👉 [http://localhost:5000](http://localhost:5000)
 
 
-📸 Screenshots
+## 📸 Screenshots
+<img width="1506" height="876" alt="Screenshot 2025-09-03 075301" src="https://github.com/user-attachments/assets/d3366bd2-f890-4341-89d6-ffa97e9f21f0" />
+
+
+<img width="1560" height="780" alt="Screenshot 2025-09-03 075814" src="https://github.com/user-attachments/assets/92b51dd8-8c8a-4209-8dc0-d0a3eeb59e63" />
+
+
+
+
