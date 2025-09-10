@@ -11,13 +11,16 @@ const jwtSecret = process.env.JWT_SECRET;
 //GET , Admin - Login Page
 router.get("/admin", async (req, res) => {
   try {
+    //JS object
     const locals = {
       title: "Admin",
       description: "Simple Blog",
     };
-    //Give me all the blog posts from the posts collection
+    //taking all the blog posts from the posts collection
     const data = await Post.find();
     //index.ejs is rendered inside admin folder
+    //Use adminLayout as the layout template.
+    //here adminLayout come from admin.ejs.index.ejs will be wraped inside this admin.ejs
     res.render("admin/index", { locals, layout: adminLayout });
   } catch (error) {
     console.log(error);
